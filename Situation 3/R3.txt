@@ -1,0 +1,19 @@
+15  history
+   16  ip a
+   17  ip a flush dev eth0
+   18  ip a flush dev eth2
+   19  ipa
+   20  ip a
+   21  pi a a 172.1.3.254/24 dev eth0
+   22  ip a a 172.1.3.254/24 dev eth0
+   23  ip a a 10.1.2.3/24 dev eth3
+   24  ip a a 10.1.1.3/24 dev eth2
+   25  ping 172.1.3.1
+   26  ip a
+   27  ip link set eth3 up
+   28  ip a
+   29  ip r a 172.1.1.0/24 via 10.1.2.1
+   30  ip r a 172.1.2.0/24 via 10.1.1.2
+   31  ip r a 10.1.3.0/24 via 10.1.2.1
+   32  history
+root@R3[~]# 

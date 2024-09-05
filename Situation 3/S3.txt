@@ -1,0 +1,11 @@
+21  history
+   22  ip a flush dev eth
+   23  ip a flush dev eth0
+   24  ip a
+   25  ip a a 172.1.3.1/24 dev eth0
+   26  ip a
+   27  ip r a default via 172.1.3.254
+   28  ping 172.1.2.1
+   29  ping 172.1.1.1
+   30  history
+root@S3[/home]# 

@@ -1,0 +1,39 @@
+41  history
+   42  ip a
+   43  ip a flush dev eth0
+   44  ip a flush dev eth1
+   45  ipa
+   46  ip a
+   47  ip r
+   48  ip a a 10.1.3.1/24 dev eth1
+   49  ip a a 10.1.2.1/24 dev eth3
+   50  ip a a 172.1.1.254/24 dev eth0
+   51  ping 172.1.1.1
+   52  ip r a 172.1.2.0/24 via 10.1.3.2
+   53  ip r a 172.1.3.0/24 via 10.1.2.3
+   54  ip r a 172.1.3.0/24 via 10.1.2.3
+   55  ip a
+   56  ip link set eth3 up
+   57  ip r a 172.1.3.0/24 via 10.1.2.3
+   58  ip r a 10.1.1.0/24 via 10.1.2.3
+   59  ip r a 10.1.1.0/24 via 10.1.3.2
+   60  nano /etc/quagga/daemons
+   61  nano /etc/quagga/daemons
+   62  dpkg -l | grep quagga
+   63  sudo apt update
+   64  sudo apt-get update
+   65  apt-get update
+   66  apt install quagga quagga-doc
+   67  apt-get install quagga quagga-doc
+   68  sudo apt-get install curl gnupg2 software-properties-common
+   69  apt-get install curl gnupg2 software-properties-common
+   70  curl -s https://deb.frrouting.org/frr/keys.asc | sudo apt-key add -
+   71  curl -s https://deb.frrouting.org/frr/keys.asc | apt-key add -
+   72  add-apt-repository "deb https://deb.frrouting.org/frr $(lsb_release -sc) frr-stable"
+   73  apt-get update
+   74  apt-get install frr frr-doc
+   75  nano /etc/frr/daemons
+   76  nano /etc/frr/zebra.conf
+   77  ip r
+   78  history
+root@R1[~]# 

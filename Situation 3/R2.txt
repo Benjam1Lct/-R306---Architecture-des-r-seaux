@@ -1,0 +1,15 @@
+history
+   25    ip a flush dev eth0
+   26    ip a flush dev eth1
+   27    ip a flush dev eth2
+   28  ip a
+   29  ip a
+   30  ip a a 172.1.2.254/24 dev eth0
+   31  ip a a 10.1.3.2/24 dev eth1
+   32  ip a a 10.1.1.2/24 dev eth2
+   33  ping 172.1.2.1
+   34  ping 172.1.1.1
+   35  ip r a 172.1.1.0/24 via 10.1.3.1
+   36  ip r a 172.1.3.0/24 via 10.1.1.3
+   37  ip r a 10.1.2.0/24 via 10.1.1.3
+   38  history
