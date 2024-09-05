@@ -1,0 +1,25 @@
+root@R2[~]# history
+    1  ip a a 10.1.1.2 dev eth1
+    2  ip a a 172.1.2.254 dev eth0
+    3  ip a a 10.1.2.2 dev eth2
+    4  ip a
+    5  ip a flush dev eth1
+    6  ip a flush dev eth2
+    7  ip a a 10.1.1.2/24 dev eth1
+    8  ip a a 10.1.2.2/24 dev eth2
+    9  ip a
+   10  ip a flush dev eth0
+   11  ip a a 172.1.2.254/24 dev eth0
+   12  ip a
+   13  sysctl net.ipv4.ip_forward=1
+   14  ip link set eth1 up
+   15  ip link set eth0 up
+   16  ip link set eth2 up
+   17  ip a
+   18  nano /etc/sysctl.conf 
+   19  sysctl -p
+   20  ip a
+   21  ip r a 172.1.3.0/24 via 10.1.2.3
+   22  ip r a 172.1.1.0/24 via 10.1.1.1
+   23  ip r
+   24  history
