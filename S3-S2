@@ -1,0 +1,23 @@
+root@S3[/home]# history
+    1  ip a
+    2  ip a a 172.11.3.1/24 dev eth0
+    3  ping 172.1.2.1
+    4  ip link set eth0 up
+    5  ip r a default via 172.1.3.254
+    6  ip a
+    7  ip a flush dev eth0
+    8  ip a a 172.1.3.1/24 dev eth0
+    9  ip link set eth0 up
+   10  ip r a default via 172.1.3.254
+   11  ping 10.1.2.2
+   12  ping 10.1.2.3
+   13  ping 172.1.1.1
+   14  ping 172.1.2.1
+   15  ls
+   16  ls -l
+   17  ls -a
+   18  cd 
+   19  cd /home/
+   20  ls
+   21  history
+root@S3[/home]# 
